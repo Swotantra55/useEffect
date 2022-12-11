@@ -10,6 +10,9 @@ function App(){
         
         //setCalculation(()=> count *2)
         setCalculation((count)=> count *2)
+        //here the setCalculation doesn't increase the calculation value when the count is passed
+        //because when count is passed as the argument of the arrow function, it takes the value
+        //the previous value of the state calculation of the same useState arrow.
         
     }, [count])
 
